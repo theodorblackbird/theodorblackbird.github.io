@@ -34,7 +34,9 @@ module.exports = function(eleventyConfig) {
   /* files that need to be copied to the build folder  */
   /*===================================================*/
   eleventyConfig.addPassthroughCopy('./src/assets/social-image.jpg')
+  eleventyConfig.addPassthroughCopy('./src/assets/bblogo.jpg')
   eleventyConfig.addPassthroughCopy('./src/assets/icons')
+  eleventyConfig.addPassthroughCopy('./src/assets/exp_sasae')
   eleventyConfig.addPassthroughCopy('./src/assets/sprite.svg')
   eleventyConfig.addPassthroughCopy({
       'node_modules/svg-icon-sprite/dist/svg-icon-sprite.js': 'assets/svg-icon-sprite.js'

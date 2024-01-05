@@ -1,12 +1,10 @@
 {
-  "title": "Eleventy Not so minimal blog starter",
-  "url": "https://eleventy-not-so-minimal-blog-starter.netlify.app",
+  "title": "theodorblackbird webpage",
+  "url": "theodorblackbird.github.io",
   "language": "en",
-  "description": "Build your own website + blog with the 'not so minimal blog starter' which uses the Eleventy static site generator.",
+  "description": "theodorblackbird's webpage",
   "author": {
-    "name": "firstname lastname",
-    "email": "hello@blog.com"
-  },
-  "image": "/assets/social-image.jpg",
-  "feedUrl": "https://eleventy-not-so-minimal-blog-starter.netlify.app/feed.xml"
+    "name": "theodorblackbird",
+    "email": "lemerle@ircam.fr"
+  }
 }
