@@ -11,6 +11,9 @@
     "build:sass": "sass  --no-source-map --style=compressed src/assets/theming:_site/assets",
     "start": "npm-run-all build:sass generate:sprite --parallel watch:*",
     "build": "npm-run-all build:*",
+    "build:sass:prod": "sass src/static/scss:public/static/css --style compressed",
+    "build:eleventy:prod": "ELEVENTY_ENV=production eleventy",
+    "build:prod": "npm run build:eleventy:prod & npm run build:sass:prod",
     "debug": "DEBUG=* npx eleventy"
   },
   "author": {
