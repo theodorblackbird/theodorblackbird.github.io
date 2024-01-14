@@ -1,14 +1,14 @@
 ---
 layout: page
 eleventyNavigation:
-  key: home
+  key: about
   order: 1
 ---
 ![image info](./assets/bblogo.jpg "my image")
 
 # Théodor Lemerle
-## PhD Candidate @ IRCAM, team _Analyse/Synthèse_.
-My goal is to build expressive text-to-speech (TTS) model, so that it 
+## 1st year PhD Candidate @ IRCAM, team _Analyse/Synthèse_.
+My goal is to build expressive text-to-speech model so that it 
 could convincigly tell a story to a kid. 
 
 Before that I was studying acoustic, signal processing and computer science for
@@ -21,8 +21,7 @@ My supervisors are [Axel Roebel](https://www.ircam.fr/person/axel-roebel) and [N
 
 ## I'm interested in 
 
-Text-to-speech, deep learning, audio signal processing, language modeling, 
-generative modeling ...
+Text-to-speech, deep learning, audio signal processing, generative modelling ...
 
 <br>
 <br>
