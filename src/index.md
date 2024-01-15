@@ -21,7 +21,7 @@ My supervisors are [Axel Roebel](https://www.ircam.fr/person/axel-roebel) and [N
 
 ## I'm interested in 
 
-Text-to-speech, deep learning, audio signal processing, generative modelling ...
+Text-to-speech, deep learning, audio signal processing, generative modeling ...
 
 <br>
 <br>
