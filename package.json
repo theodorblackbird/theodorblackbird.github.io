@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "description": "My webpage",
   "main": "index.md",
+
   "scripts": {
-  "start": "npx @11ty/eleventy --serve",
-  "build": "npx @11ty/eleventy"
-  },
+  "generate:sprite": "svg-icon-generate --folder=src/assets/icons --output=src/assets/sprite.svg",
+  "watch:eleventy": "eleventy --serve",
+  "watch:sass": "sass --watch src/assets/theming:_site/assets",
+  "build:eleventy": "eleventy",
+  "build:sass": "sass  --no-source-map --style=compressed src/assets/theming:_site/assets",
+  "start": "npm-run-all build:sass generate:sprite --parallel watch:*",
+  "build": "npm-run-all build:*",
+  "debug": "DEBUG=* npx eleventy"
+},
 
   "author": {
     "name": "Théodor Lemerle"
