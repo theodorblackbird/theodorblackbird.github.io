@@ -1,24 +1,14 @@
 {
-  "name": "eleventy-not-so-minimal-blog-starter",
+  "name": "bbd-webpage",
   "version": "1.0.0",
-  "description": "A not so minimal starter for building a website + blog using the Eleventy static site generator.",
+  "description": "My webpage",
   "main": "index.md",
   "scripts": {
-    "generate:sprite": "svg-icon-generate --folder=src/assets/icons --output=src/assets/sprite.svg",
-    "watch:eleventy": "eleventy --serve",
-    "watch:sass": "sass --watch src/assets/theming:_site/assets",
-    "build:eleventy": "eleventy",
-    "build:sass": "sass  --no-source-map --style=compressed src/assets/theming:_site/assets",
-    "start": "npm-run-all build:sass generate:sprite --parallel watch:*",
-    "build": "npm-run-all build:*",
-    "build:sass:prod": "sass src/static/scss:public/static/css --style compressed",
-    "build:eleventy:prod": "ELEVENTY_ENV=production eleventy",
-    "build:prod": "npm run build:eleventy:prod & npm run build:sass:prod",
-    "debug": "DEBUG=* npx eleventy"
+  "start": "npx @11ty/eleventy --serve",
+  "build": "npx @11ty/eleventy"
   },
   "author": {
-    "name": "Claudia Reynders",
-    "url": "https://twitter.com/claudia_rndrs"
+    "name": "Théodor Lemerle"
   },
   "license": "MIT",
   "dependencies": {
