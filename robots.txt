@@ -1,7 +1,3 @@
----
-permalink: '/robots.txt'
-eleventyExcludeFromCollections: true
----
 
 User-agent: Baiduspider
 User-agent: Baiduspider-video
@@ -9,4 +5,4 @@ User-agent: Baiduspider-image
 Disallow: /
 
 User-agent: *
-Sitemap: {{ metadata.url }}/sitemap.xml
+Sitemap: theodorblackbird.github.io/sitemap.xml
