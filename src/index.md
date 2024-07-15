@@ -7,7 +7,7 @@ eleventyNavigation:
 ![image info](./assets/bblogo.jpg "my image")
 
 # Théodor Lemerle
-## PhD Candidate @ IRCAM, team _Analyse/Synthèse_.
+## PhD Student @ IRCAM, team _Analyse/Synthèse_.
 My goal is to build expressive text-to-speech model that could convincingly tell a story to a kid. 
 
 Before that I studied acoustic, signal processing and computer science for
