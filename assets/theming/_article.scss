@@ -15,7 +15,12 @@ article {
       transition: all 400ms ease-in;
     }
   }
-
+  body { 
+      max-width: 1200px !important;
+      line-height: 1.2;
+      font-size: 17px;
+      margin: 0 auto;
+  }
   small {
     display: inline-block;
     margin-bottom: 1em;
@@ -25,5 +30,22 @@ article {
     + * {
       margin-top: 1em;
     }
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  section {
+    background-color: #f8f6f6;
+    box-shadow: 10px 3px 3px ;
+    margin-bottom: 50px;
+    p {
+      font-style: italic;
+      // width: 66%;
+    }
+  }
+
+  table {
+    margin-bottom: 50px;
   }
 }

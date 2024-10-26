@@ -13,8 +13,17 @@
     
        
         <url>
+            <loc>/blog/demo_lina/</loc>
+            <lastmod>2024-10-22T00:00:00.000Z</lastmod>
+            <changefreq>monthly</changefreq>
+        </url>
+        
+    
+    
+       
+        <url>
             <loc>/blog/</loc>
-            <lastmod>2024-07-15T18:50:04.390Z</lastmod>
+            <lastmod>2024-10-26T22:32:56.711Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -23,7 +32,7 @@
        
         <url>
             <loc>/blog/demo/</loc>
-            <lastmod>2024-07-15T18:50:04.390Z</lastmod>
+            <lastmod>2024-10-26T22:32:56.711Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         

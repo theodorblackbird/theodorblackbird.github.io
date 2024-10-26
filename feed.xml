@@ -4,11 +4,19 @@
     <subtitle></subtitle>
     <link href="" rel="self"/>
     <link href="theodorblackbird.github.io"/>
-    <updated>2024-01-12T00:00:00Z</updated>
+    <updated>2024-10-22T00:00:00Z</updated>
     <id>theodorblackbird.github.io</id>
     <author>
         <name>Claudia R</name>
     </author>
+    <entry>
+        <title>Lina-Speech demo page</title>
+        <link href="/blog/demo_lina/"/>
+        <updated>2024-10-22T00:00:00Z</updated>
+        <id>/blog/demo_lina/</id>
+        
+        <content type="html"></content>
+    </entry>
     <entry>
         <title>Lina demo page (alpha)</title>
         <link href="/blog/demo_alpha/"/>

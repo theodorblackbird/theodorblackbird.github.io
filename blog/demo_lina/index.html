@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lina-Speech demo page</title>
+    
+
+  
+<meta name="description" content="theodorblackbird&#39;s webpage">
+<meta name="author" content="theodorblackbird">
+
+<meta property="og:title" content="theodorblackbird webpage">
+<meta property="og:type" content="website">
+<meta property="og:url" content="">
+<meta property="og:description" content="theodorblackbird&#39;s webpage">
+
+
+    <script type="module" src="/assets/svg-icon-sprite.js"></script>
+    <link rel="stylesheet" href="/assets/theme.css" />
+  </head>
+
+  <body>
+    
+<header role="banner">
+  <div class="logo">
+  </div>
+  <nav role="navigation" aria-label="main navigation" >
+    <ul>
+        <li class="nav__item">
+          <a href="/">about</a>
+        </li>
+        <li class="nav__item">
+          <a href="/blog/">work</a>
+        </li></ul>
+  </nav>
+</header>
+
+    <main role="main">
+      
+<article class="article">
+  <h1>Lina-Speech demo page</h1>
+  <small>
+    Published: <time>October 22, 2024</time>
+    <a class="category" href="/blog/demo">demo</a>
+  </small>
+  <section>
+<h2> Authors </h2>
+Théodor Lemerle - lemerle@ircam.fr <br>
+Harrison Vanderbyl - harrison@rwkv.com <br>
+Vaibhav Srivastav - vb@hf.co <br>
+Nicolas Obin- obin@ircam.fr <br>
+Axel Roebel - roebel@ircam.fr <br>
+</section>
+<section>
+<h2> Initial State Tuning</h2>
+<p style="">
+Initial State Tuning eases voice cloning from <strong> multiple speech excerpts </strong>, allowing us to capture finer details of the target speaker's identity. We compare this approach to prompt continuation. All speakers in this section are <strong>unseen</strong>. We crop the target text of VoiceCraft when necessary due to its limited context window.
+</p>
+<table>
+    <tr>
+    <th>Speaker</th>
+    <th>Text</th>
+    <th style="min-width:160px;">Lina-Speech <small>(Initial State Tuning)</small></th>
+    <th style="min-width:160px;">Lina-Speech <small>(Prompt continuation)</small></th>
+    <th style="min-width:160px;">VoiceCraft <small>(Prompt continuation)</small></th>
+    <th style="min-width:160px;">Original</th>
+    </tr>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>3blue1brown  </td>
+<td>  The train sped through the countryside, fields of green and gold rushing past the window in a blur. Inside the carriage, passengers settled into their seats, lost in thought or conversation. A child pressed her nose against the glass, marveling at the changing landscape, while her parents whispered quietly, planning their next adventure together.</td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/3b1b/norm/ist.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/3b1b/norm/no_ist.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/3b1b/norm/voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/3b1b/norm/original.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>Tibees  </td>
+<td>  The ordinary operations of algebra suffice to resolve problems in the theory of curves.</td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/tibees/norm/ist.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/tibees/norm/no_ist.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/tibees/norm/voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/tibees/norm/original.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>LJSpeech  </td>
+<td>  Compared to prompt continuation, it allows voice cloning from multiple speech excerpts and full usage of the context window for synthesis.</td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/ljspeech/norm/ist.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/ljspeech/norm/no_ist.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/ljspeech/norm/voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/ljspeech/norm/original.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>Krista King  </td>
+<td>  Once the game is over, the King and the pawn go back in the same box.</td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/krista_king/norm/ist.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/krista_king/norm/no_ist.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/krista_king/norm/voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/krista_king/norm/original.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>Geoffrey Hinton  </td>
+<td>  Newton was the greatest genius that ever existed, and the most fortunate, for we cannot find more than once a system of the world to establish.</td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/hinton_newton/norm/ist.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/hinton_newton/norm/no_ist.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/hinton_newton/norm/voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/hinton_newton/norm/original.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>Frank Zappa  </td>
+<td>  Discovery is a child's privilege. I mean the small child, the child who is not afraid to be wrong, to look silly, to not be serious, and to act differently from everyone else. He is also not afraid that the things he is interested in are in bad taste or turn out to be different from his expectations, from what they should be, or rather he is not afraid of what they actually are.</td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/frank_zappa/norm/ist.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/frank_zappa/norm/no_ist.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/frank_zappa/norm/voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/ist/frank_zappa/norm/original.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+</table>
+</section>
+<section>
+<h2> Initial State Tuning Against Parler - Expresso Dataset (Evaluation samples) </h2>
+<p style="">
+Samples from the evaluation in the paper on the Expresso Dataset.
+Samples are <strong>unseen</strong> during training for Lina-Speech and the initial states are tuned on each pair (speaker, style). Parler-Mini has been fine-tuned on Expresso.
+</p>
+<table>
+    <tr>
+    <th>Speaker ID</th>
+    <th>Style</th>
+    <th>Text</th>
+    <th style="min-width:160px;">Lina-Speech <small>(Initial State Tuning)</small></th>
+    <th style="min-width:160px;">Parler Mini<small>(Textual Prompt)</small></th>
+    <th>Original</th>
+    </tr>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>ex01  </td>
+<td>whisper  </td>
+<td>  The old man sat on his porch, whittling a piece of wood as the sun set.</td>
+<td><audio controls=""><source src="/assets/demo_lina/expresso/35_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/expresso/35_parler.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/expresso/ex01_whisper_example.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>ex04  </td>
+<td>default  </td>
+<td>  As the storm intensified, the sound of thunder echoed through the valley, and the wind howled ferociously, rattling the windows and causing the tall trees to sway dangerously.</td>
+<td><audio controls=""><source src="/assets/demo_lina/expresso/85_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/expresso/85_parler.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/expresso/ex04_default_example.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>ex01  </td>
+<td>confused  </td>
+<td>  They argued all night long, voices rising and falling like the ebb and flow of waves.</td>
+<td><audio controls=""><source src="/assets/demo_lina/expresso/82_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/expresso/82_parler.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/expresso/ex01_confused_example.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>ex01  </td>
+<td>happy  </td>
+<td>  In an old, creaky wooden house at the edge of town, a mysterious ticking noise could be heard every night, filling the silence and keeping the residents awake in a constant state of curiosity and unease.</td>
+<td><audio controls=""><source src="/assets/demo_lina/expresso/50_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/expresso/50_parler.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/expresso/ex01_happy_example.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>ex03  </td>
+<td>enunciated  </td>
+<td>  The vibrant colors of the autumn leaves, from fiery reds to deep oranges, fluttered gently in the cool breeze, creating a mesmerizing display as they fell softly to the ground.</td>
+<td><audio controls=""><source src="/assets/demo_lina/expresso/80_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/expresso/80_parler.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/expresso/ex03_enunciated_example.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>ex02  </td>
+<td>sad  </td>
+<td>  At the edge of the desert, a lone cactus stood tall, its spiny arms outstretched toward the sun, while in the distance, sand dunes rolled endlessly, their peaks glowing gold in the late afternoon light.</td>
+<td><audio controls=""><source src="/assets/demo_lina/expresso/24_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/expresso/24_parler.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/expresso/ex02_sad_example.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p></tr></p>
+</table>
+</section>
+<section>
+ <h2> Initial State Tuning Against Parler - LibriTTS (Evaluation samples)</h2>
+<p style="">
+Samples from the evaluation in the paper on LibriTTS.
+Samples are <strong>seen</strong> during training for both models.
+</p>
+<table>
+    <tr>
+    <th>Speaker ID</th>
+    <th>Text</th>
+    <th style="min-width:160px;">Lina-Speech <small>(Initial State Tuning)</small></th>
+    <th style="min-width:160px;">Parler Mini<small>(Textual Prompt)</small></th>
+    <th>Original</th>
+    </tr>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>Eileen  </td>
+<td>  The chef, with years of experience behind him, carefully prepared the gourmet meal, slicing vegetables with precision and adding a dash of spices, while the aroma of roasting meats filled the kitchen.</p>
+</td>
+        <td><audio controls=""><source src="/assets/demo_lina/ltts_gpt/1_lina.wav" type="audio/x-wav"></audio></td>
+        <td><audio controls=""><source src="/assets/demo_lina/ltts_gpt/1_parler.wav" type="audio/x-wav"></audio></td>
+        <td><audio controls=""><source src="/assets/demo_lina/ltts_gpt/1_example.wav" type="audio/x-wav"></audio></td>
+    </tr>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>James  </td>
+<td>  Beneath the surface of the crystal clear lake, fish darted in and out of view, their silver scales glinting in the sunlight, while water lilies floated lazily on the surface, undisturbed by the gentle ripples.</p>
+</td>
+        <td><audio controls=""><source src="/assets/demo_lina/ltts_gpt/3_lina.wav" type="audio/x-wav"></audio></td>
+        <td><audio controls=""><source src="/assets/demo_lina/ltts_gpt/3_parler.wav" type="audio/x-wav"></audio></td>
+        <td><audio controls=""><source src="/assets/demo_lina/ltts_gpt/3_example.wav" type="audio/x-wav"></audio></td>
+    </tr>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>Aaron  </td>
+<td>  On the open plains, herds of wild horses galloped freely, their manes flowing in the wind, and the pounding of their hooves creating a thunderous rhythm that reverberated through the earth.</p>
+</td>
+        <td><audio controls=""><source src="/assets/demo_lina/ltts_gpt/5_lina.wav" type="audio/x-wav"></audio></td>
+        <td><audio controls=""><source src="/assets/demo_lina/ltts_gpt/5_parler.wav" type="audio/x-wav"></audio></td>
+        <td><audio controls=""><source src="/assets/demo_lina/ltts_gpt/5_example.wav" type="audio/x-wav"></audio></td>
+    </tr>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>Emily  </td>
+<td>  As she walked along the beach at sunset, the rhythmic sound of the waves crashing against the shore was accompanied by the distant cries of seagulls, creating a serene and peaceful atmosphere.</p>
+</td>
+        <td><audio controls=""><source src="/assets/demo_lina/ltts_gpt/6_lina.wav" type="audio/x-wav"></audio></td>
+        <td><audio controls=""><source src="/assets/demo_lina/ltts_gpt/6_parler.wav" type="audio/x-wav"></audio></td>
+        <td><audio controls=""><source src="/assets/demo_lina/ltts_gpt/6_example.wav" type="audio/x-wav"></audio></td>
+    </tr>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>Bruce  </td>
+<td>  In the laboratory, scientists worked tirelessly to develop a new form of renewable energy, surrounded by computers, chemical vials, and complex machinery that hummed softly in the background.</p>
+</td>
+        <td><audio controls=""><source src="/assets/demo_lina/ltts_gpt/33_lina.wav" type="audio/x-wav"></audio></td>
+        <td><audio controls=""><source src="/assets/demo_lina/ltts_gpt/33_parler.wav" type="audio/x-wav"></audio></td>
+        <td><audio controls=""><source src="/assets/demo_lina/ltts_gpt/33_example.wav" type="audio/x-wav"></audio></td>
+    </tr>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>Rebecca  </td>
+<td>  In the early hours of a misty morning, the golden rays of the sun slowly crept over the horizon, casting long shadows on the dew covered grass and awakening the sleepy countryside.</p>
+</td>
+        <td><audio controls=""><source src="/assets/demo_lina/ltts_gpt/31_lina.wav" type="audio/x-wav"></audio></td>
+        <td><audio controls=""><source src="/assets/demo_lina/ltts_gpt/31_parler.wav" type="audio/x-wav"></audio></td>
+        <td><audio controls=""><source src="/assets/demo_lina/ltts_gpt/31_example.wav" type="audio/x-wav"></audio></td>
+    </tr>
+<p></tr></p>
+</table>
+</section>
+<section>
+<h2> Zero-shot voice cloning by prompt continuation (Evaluation samples). </h2>
+<p>
+Samples from the evaluation in the paper on LibriTTS test split for prompt continuation.
+Samples are <strong>unseen</strong> during training.
+</p>
+<table>
+    <tr>
+    <th>Speaker ID</th>
+    <th>Text</th>
+    <th>Prompt</th>
+    <th>Lina-Speech </th>
+    <th>VoiceCraft</th>
+    <th>StyleTTS 2</th>
+    <th>VALLE-X (Plachtaa)</th>
+    </tr>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>3080  </td>
+<td>  I am beginning it to day; and have chosen to go as far as Gravesend by water, though it be very gloomy weather.</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/96_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/96_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/96_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/96_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/96_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>2300  </td>
+<td>  We had an index like a steam gauge, called an ampere meter, to indicate the amount of current going out.</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/94_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/94_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/94_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/94_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/94_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>5764  </td>
+<td>  Would john Knox have been any worse had he deserted Christ and become a follower of Confucius?</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/93_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/93_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/93_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/93_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/93_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>908  </td>
+<td>  Dearest, teach me so To pour out gratitude, as thou dost, good!</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/91_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/91_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/91_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/91_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/91_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>1688  </td>
+<td>  I don't think, mr Hale, you have done quite right in introducing such a person to us without telling us what he had been.</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/90_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/90_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/90_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/90_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/90_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>6432  </td>
+<td>  There were three of them, the center figure being that of Harry King, and he was very much intoxicated.</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/88_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/88_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/88_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/88_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/88_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>121  </td>
+<td>  He seemed to say it was not so simple as that; to be really at a loss how to qualify it.</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/87_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/87_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/87_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/87_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/87_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>2300  </td>
+<td>  The hotel is situated at an elevation of thirty five hundred feet above the sea, and was at that time forty miles from the railroad.</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/85_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/85_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/85_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/85_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/85_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>3997  </td>
+<td>  Of course that make a terrible mess an' a powerful lot of smoke an' hot ashes fly up the chimney.</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/84_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/84_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/84_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/84_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/84_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>8230  </td>
+<td>  Thus no knowledge as to the past is to be derived from the feeling of familiarity alone.</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/81_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/81_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/81_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/81_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/81_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>1688  </td>
+<td>  I knew it all along from mr Bell; so I was aware of what was coming; but I half expected to see you get up and leave the room.'</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/80_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/80_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/80_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/80_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/80_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>7729  </td>
+<td>  Ten days were consumed in these negotiations; but the spirit of vengeance refused to yield.</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/79_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/79_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/79_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/79_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/79_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>4077  </td>
+<td>  At the inception of plural marriage among the Latter day Saints, there was no law, national or state, against its practise.</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/77_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/77_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/77_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/77_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/77_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>121  </td>
+<td>  He seemed to say it was not so simple as that; to be really at a loss how to qualify it.</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/76_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/76_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/76_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/76_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/76_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>6938  </td>
+<td>  After a brief conversation I left-and that's all! Let any one present make such an accusation!&quot;</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/74_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/74_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/74_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/74_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/74_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>8455  </td>
+<td>  Then there were three or four leading men of the community, with their wives, who were for the most part the fathers and mothers of the young ladies.</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/72_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/72_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/72_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/72_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/72_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>1995  </td>
+<td>  At last the Cotton Combine was to all appearances an assured fact and he was slated for the Senate.</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/66_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/66_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/66_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/66_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/66_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>3538  </td>
+<td>  The old King went out and fought bravely, but at last his sword broke, and he was wounded and his men fled.</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/65_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/65_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/65_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/65_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/65_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>2961  </td>
+<td>  The subject was a very noble one; he described the most famous action in which the Athenian people were ever engaged.</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/59_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/59_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/59_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/59_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/59_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>4970  </td>
+<td>  And the lectures, and the dissecting rooms, has thee thought of the dissecting rooms?&quot;</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/58_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/58_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/58_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/58_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/58_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>5442  </td>
+<td>  &quot;I ought to own that I don't very well understand the drift of the provincial elections,&quot; said Levin.</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/19_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/19_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/19_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/19_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/19_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>1284  </td>
+<td>  At the foot of the mountain that separated the Country of the Munchkins from the Country of the Gillikins, the path divided.</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/14_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/14_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/14_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/14_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/14_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p><tr style="border-bottom: 1px solid #000;">
+<td>4992  </td>
+<td>  A few moments later Nancy entered her mother's room, her arms filled with treasures from the woods and fields.</td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/10_prompt.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/10_lina.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/10_voicecraft.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/10_styletts.wav" type="audio/x-wav"></audio></td>
+<td><audio controls=""><source src="/assets/demo_lina/zero/10_vallex.wav" type="audio/x-wav"></audio></td>
+</tr></p>
+<p></tr></p>
+</table>
+</section>
+
+</article>
+    </main>
+    <footer role="contentinfo">
+</footer>
+
+  </body>
+</html>
