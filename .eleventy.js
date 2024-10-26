@@ -38,6 +38,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/assets/icons')
   eleventyConfig.addPassthroughCopy('./src/assets/theming')
   eleventyConfig.addPassthroughCopy('./src/assets/demo_alpha')
+  eleventyConfig.addPassthroughCopy('./src/assets/demo_lina')
   eleventyConfig.addPassthroughCopy('./src/assets/sprite.svg')
   eleventyConfig.addPassthroughCopy({
       'node_modules/svg-icon-sprite/dist/svg-icon-sprite.js': 'assets/svg-icon-sprite.js'

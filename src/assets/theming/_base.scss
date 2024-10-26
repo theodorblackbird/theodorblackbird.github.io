@@ -52,7 +52,7 @@ nav ul li {
     margin-bottom: 40px;
 }
 body { 
-    max-width: 750px;
+    max-width: 1200px;
     line-height: 1.2;
     font-size: 17px;
     margin: 0 auto;
@@ -71,6 +71,8 @@ p {
 audio {
   controls: "controls";
   max-width: 130px;
+  margin: 0 auto;
+  display: block;
 }
 table {
   border-collapse: collapse;

@@ -1,0 +1,32 @@
+[
+	{
+		"text_target": "The train sped through the countryside, fields of green and gold rushing past the window in a blur. Inside the carriage, passengers settled into their seats, lost in thought or conversation. A child pressed her nose against the glass, marveling at the changing landscape, while her parents whispered quietly, planning their next adventure together.",
+		"speaker": "3blue1brown",
+		"folder": "3b1b"
+	},
+	{
+		"text_target": "The ordinary operations of algebra suffice to resolve problems in the theory of curves.",
+		"speaker": "Tibees",
+		"folder": "tibees"
+	},
+	{
+		"text_target": "Compared to prompt continuation, it allows voice cloning from multiple speech excerpts and full usage of the context window for synthesis.",
+		"speaker": "LJSpeech",
+		"folder": "ljspeech"
+	},
+	{
+		"text_target": "Once the game is over, the King and the pawn go back in the same box.",
+		"speaker": "Krista King",
+		"folder": "krista_king"
+	},
+	{
+		"text_target": "Newton was the greatest genius that ever existed, and the most fortunate, for we cannot find more than once a system of the world to establish.",
+		"speaker": "Geoffrey Hinton",
+		"folder": "hinton_newton"
+	},
+	{
+		"text_target": "Discovery is a child's privilege. I mean the small child, the child who is not afraid to be wrong, to look silly, to not be serious, and to act differently from everyone else. He is also not afraid that the things he is interested in are in bad taste or turn out to be different from his expectations, from what they should be, or rather he is not afraid of what they actually are.",
+		"speaker": "Frank Zappa",
+		"folder": "frank_zappa"
+	}
+]
