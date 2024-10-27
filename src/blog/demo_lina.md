@@ -6,11 +6,11 @@ category: "demo"
 ---
 <section>
 <h2> Authors </h2>
-Théodor Lemerle <br>
-Harrison Vanderbyl <br>
-Vaibhav Srivastav <br>
-Nicolas Obin <br>
-Axel Roebel <br>
+Théodor Lemerle - IRCAM<br>
+Harrison Vanderbyl - RWKV Foundation/Eleuther AI/Recursal AI<br>
+Vaibhav Srivastav - HuggingFace<br>
+Nicolas Obin - IRCAM <br>
+Axel Roebel - IRCAM <br>
 
 </section>
 

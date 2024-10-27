@@ -5,6 +5,17 @@
 		"folder": "3b1b"
 	},
 	{
+		"text_target": "Primary causes are unknown to us, but are subject to simple and constant laws, which may be discovered by observation, the study of them being the object of natural philosophy.",
+		"speaker": "Sabine Hossenfelder",
+		"folder": "sabine_hossenfelder"
+	},
+	{
+		"text_target": "Newton was the greatest genius that ever existed, and the most fortunate, for we cannot find more than once a system of the world to establish.",
+		"speaker": "Geoffrey Hinton",
+		"folder": "hinton_newton"
+	},
+
+	{
 		"text_target": "The ordinary operations of algebra suffice to resolve problems in the theory of curves.",
 		"speaker": "Tibees",
 		"folder": "tibees"
@@ -15,14 +26,14 @@
 		"folder": "ljspeech"
 	},
 	{
+		"text_target": "Sometimes when we are generous in small, barely detectable ways it can change someone else's life forever.",
+		"speaker": "Andy Stapleton",
+		"folder": "andy_stapleton"
+	},
+	{
 		"text_target": "Once the game is over, the King and the pawn go back in the same box.",
 		"speaker": "Krista King",
 		"folder": "krista_king"
-	},
-	{
-		"text_target": "Newton was the greatest genius that ever existed, and the most fortunate, for we cannot find more than once a system of the world to establish.",
-		"speaker": "Geoffrey Hinton",
-		"folder": "hinton_newton"
 	},
 	{
 		"text_target": "Discovery is a child's privilege. I mean the small child, the child who is not afraid to be wrong, to look silly, to not be serious, and to act differently from everyone else. He is also not afraid that the things he is interested in are in bad taste or turn out to be different from his expectations, from what they should be, or rather he is not afraid of what they actually are.",
