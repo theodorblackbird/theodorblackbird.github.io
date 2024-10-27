@@ -6,11 +6,11 @@ category: "demo"
 ---
 <section>
 <h2> Authors </h2>
-Théodor Lemerle - lemerle@ircam.fr <br>
-Harrison Vanderbyl - harrison@rwkv.com <br>
-Vaibhav Srivastav - vb@hf.co <br>
-Nicolas Obin- obin@ircam.fr <br>
-Axel Roebel - roebel@ircam.fr <br>
+Théodor Lemerle <br>
+Harrison Vanderbyl <br>
+Vaibhav Srivastav <br>
+Nicolas Obin <br>
+Axel Roebel <br>
 
 </section>
 
@@ -23,19 +23,19 @@ Initial State Tuning eases voice cloning from <strong> multiple speech excerpts 
     <tr>
     <th>Speaker</th>
     <th>Text</th>
+    <th style="min-width:160px;">Original</th>
     <th style="min-width:160px;">Lina-Speech <small>(Initial State Tuning)</small></th>
     <th style="min-width:160px;">Lina-Speech <small>(Prompt continuation)</small></th>
     <th style="min-width:160px;">VoiceCraft <small>(Prompt continuation)</small></th>
-    <th style="min-width:160px;">Original</th>
     </tr>
 {% for row in ist_manifest %}
     <tr style="border-bottom: 1px solid #000;">
         <td>{{ row.speaker }}  </td>
         <td>  {{ row.text_target }}</td>
+        <td><audio controls=""><source src="/assets/demo_lina/ist/{{ row.folder }}/norm/original.wav" type="audio/x-wav"></audio></td>
         <td><audio controls=""><source src="/assets/demo_lina/ist/{{ row.folder }}/norm/ist.wav" type="audio/x-wav"></audio></td>
         <td><audio controls=""><source src="/assets/demo_lina/ist/{{ row.folder }}/norm/no_ist.wav" type="audio/x-wav"></audio></td>
         <td><audio controls=""><source src="/assets/demo_lina/ist/{{ row.folder }}/norm/voicecraft.wav" type="audio/x-wav"></audio></td>
-        <td><audio controls=""><source src="/assets/demo_lina/ist/{{ row.folder }}/norm/original.wav" type="audio/x-wav"></audio></td>
     </tr>
 {% endfor %}
 
@@ -53,18 +53,18 @@ Samples are <strong>unseen</strong> during training for Lina-Speech and the init
     <th>Speaker ID</th>
     <th>Style</th>
     <th>Text</th>
+    <th>Original</th>
     <th style="min-width:160px;">Lina-Speech <small>(Initial State Tuning)</small></th>
     <th style="min-width:160px;">Parler Mini<small>(Textual Prompt)</small></th>
-    <th>Original</th>
     </tr>
 {% for row in expresso_manifest %}
     <tr style="border-bottom: 1px solid #000;">
         <td>{{ row.speaker_id }}  </td>
         <td>{{ row.style }}  </td>
         <td>  {{ row.text_target }}</td>
+        <td><audio controls=""><source src="/assets/demo_lina/expresso/{{ row.speaker_id }}_{{ row.style }}_example.wav" type="audio/x-wav"></audio></td>
         <td><audio controls=""><source src="/assets/demo_lina/expresso/{{ row.id }}_lina.wav" type="audio/x-wav"></audio></td>
         <td><audio controls=""><source src="/assets/demo_lina/expresso/{{ row.id }}_parler.wav" type="audio/x-wav"></audio></td>
-        <td><audio controls=""><source src="/assets/demo_lina/expresso/{{ row.speaker_id }}_{{ row.style }}_example.wav" type="audio/x-wav"></audio></td>
     </tr>
 {% endfor %}
     </tr>
@@ -83,17 +83,17 @@ Samples are <strong>seen</strong> during training for both models.
     <tr>
     <th>Speaker ID</th>
     <th>Text</th>
+    <th>Original</th>
     <th style="min-width:160px;">Lina-Speech <small>(Initial State Tuning)</small></th>
     <th style="min-width:160px;">Parler Mini<small>(Textual Prompt)</small></th>
-    <th>Original</th>
     </tr>
 {% for row in ltts_gpt_manifest %}
     <tr style="border-bottom: 1px solid #000;">
         <td>{{ row.speaker }}  </td>
         <td>  {{ row.text_target }}</td>
+        <td><audio controls=""><source src="/assets/demo_lina/ltts_gpt/{{ row.id }}_example.wav" type="audio/x-wav"></audio></td>
         <td><audio controls=""><source src="/assets/demo_lina/ltts_gpt/{{ row.id }}_lina.wav" type="audio/x-wav"></audio></td>
         <td><audio controls=""><source src="/assets/demo_lina/ltts_gpt/{{ row.id }}_parler.wav" type="audio/x-wav"></audio></td>
-        <td><audio controls=""><source src="/assets/demo_lina/ltts_gpt/{{ row.id }}_example.wav" type="audio/x-wav"></audio></td>
     </tr>
 {% endfor %}
     </tr>
