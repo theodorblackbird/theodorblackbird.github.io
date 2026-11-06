@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found · Théodor Lemerle</title>
+  <meta name="description" content="Théodor Lemerle, PhD in machine learning (IRCAM). Expressive and long-form speech synthesis.">
+  <meta name="author" content="Théodor Lemerle">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:title" content="Page not found">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://theodorblackbird.github.io/404.html">
+  <meta property="og:description" content="Théodor Lemerle, PhD in machine learning (IRCAM). Expressive and long-form speech synthesis.">
+  <meta property="og:image" content="https://theodorblackbird.github.io/assets/me.jpg">
+  <link rel="icon" href="data:,">
+  <link rel="canonical" href="https://theodorblackbird.github.io/404.html">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="/">Théodor Lemerle</a>
+      <nav aria-label="Main">
+        <a href="/#about">About</a>
+        <a href="/#publications">Publications</a>
+        <a href="/#demos">Demos</a>
+        <a href="/#contact">Contact</a>
+        <a class="topbar__mail" data-email data-u="theodorlemerle" data-d="gmail.com" href="/#contact" aria-label="Email" title="Email"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /> <rect x="2" y="4" width="20" height="16" rx="2" /></svg></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1 class="page-title">Page not found</h1>
+<p class="muted">This page has moved or no longer exists. If you followed a link from a paper, the demo is probably one of these:</p>
+<ul class="archive">
+  <li><a href="https://psw-speech.github.io/">PSW-Speech ↗</a></li><li><a href="https://z-codec.netlify.app/">z-codec ↗</a></li><li><a href="/blog/demo_lina/">Lina-Speech</a></li>
+</ul>
+<p><a href="/">← Back to the homepage</a></p>
+
+  </main>
+
+  <footer class="wrap footer">
+    <span>© 2026 Théodor Lemerle</span>
+  </footer>
+
+  <script>
+    // Build the e-mail address at runtime so it is not scraped from the HTML.
+    document.querySelectorAll('[data-email]').forEach(function (el) {
+      var addr = el.dataset.u + '@' + el.dataset.d;
+      el.href = 'mailto:' + addr;
+      var label = el.querySelector('span');
+      if (label) label.textContent = addr;
+    });
+  </script>
+</body>
+</html>

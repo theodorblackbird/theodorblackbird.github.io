@@ -4,35 +4,8 @@
     
        
         <url>
-            <loc>/blog/demo_alpha/</loc>
-            <lastmod>2024-01-12T00:00:00.000Z</lastmod>
-            <changefreq>monthly</changefreq>
-        </url>
-        
-    
-    
-       
-        <url>
-            <loc>/blog/demo_lina/</loc>
+            <loc>https://theodorblackbird.github.io/blog/demo_lina/</loc>
             <lastmod>2024-10-22T00:00:00.000Z</lastmod>
-            <changefreq>monthly</changefreq>
-        </url>
-        
-    
-    
-       
-        <url>
-            <loc>/blog/</loc>
-            <lastmod>2024-10-27T22:54:28.375Z</lastmod>
-            <changefreq>monthly</changefreq>
-        </url>
-        
-    
-    
-       
-        <url>
-            <loc>/blog/demo/</loc>
-            <lastmod>2024-10-27T22:54:28.375Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         

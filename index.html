@@ -1,64 +1,196 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>theodorblackbird webpage</title>
-    
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Théodor Lemerle</title>
+  <meta name="description" content="Théodor Lemerle, PhD in machine learning (IRCAM). Expressive and long-form speech synthesis.">
+  <meta name="author" content="Théodor Lemerle">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:title" content="Théodor Lemerle">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://theodorblackbird.github.io/">
+  <meta property="og:description" content="Théodor Lemerle, PhD in machine learning (IRCAM). Expressive and long-form speech synthesis.">
+  <meta property="og:image" content="https://theodorblackbird.github.io/assets/me.jpg">
+  <link rel="icon" href="data:,">
+  <link rel="canonical" href="https://theodorblackbird.github.io/">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="/">Théodor Lemerle</a>
+      <nav aria-label="Main">
+        <a href="/#about">About</a>
+        <a href="/#publications">Publications</a>
+        <a href="/#demos">Demos</a>
+        <a href="/#contact">Contact</a>
+        <a class="topbar__mail" data-email data-u="theodorlemerle" data-d="gmail.com" href="/#contact" aria-label="Email" title="Email"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /> <rect x="2" y="4" width="20" height="16" rx="2" /></svg></a>
+      </nav>
+    </div>
+  </header>
 
-  
-<meta name="description" content="theodorblackbird&#39;s webpage">
-<meta name="author" content="theodorblackbird">
-
-<meta property="og:title" content="theodorblackbird webpage">
-<meta property="og:type" content="website">
-<meta property="og:url" content="">
-<meta property="og:description" content="theodorblackbird&#39;s webpage">
-
-
-    <script type="module" src="/assets/svg-icon-sprite.js"></script>
-    <link rel="stylesheet" href="/assets/theme.css" />
-  </head>
-
-  <body>
-    
-<header role="banner">
-  <div class="logo">
+  <main class="wrap">
+    <section class="intro" id="about">
+  <img class="intro__photo" src="/assets/me.jpg" alt="Photo of Théodor Lemerle" width="600" height="799">
+  <div class="intro__body">
+    <h1>Théodor Lemerle</h1>
+    <div class="prose">
+      <p>
+        I did my PhD at <a href="https://www.ircam.fr/">IRCAM</a> (STMS lab, CNRS / Sorbonne Université)
+        in the Analysis/Synthesis team, supervised by
+        <a href="https://www.ircam.fr/person/axel-roebel">Axel Roebel</a> and
+        <a href="https://www.ircam.fr/person/nicolas-obin">Nicolas Obin</a>.
+        My thesis, <em>Toward Expressive and Long-Form Speech Synthesis</em>
+        (<a href="https://www.youtube.com/live/Z8ZzRfT6MC0">defense video</a>), set out to build
+        text-to-speech (TTS) models that can convincingly tell a story to a child.
+        We proposed methods for control of high-level attributes (eg. emotions, prosody) under scarce
+        annotated data regime. We also introduced architectures for stable synthesis with no measurable
+        degradation over hours of speech, while being fully streamable in text and audio.
+      </p>
+      <p>
+        Before that, I studied acoustics, signal processing and computer science for music
+        (<a href="https://www.atiam.ircam.fr/en/">ATIAM</a>) at IRCAM, and mathematics and
+        computer science for machine learning at Sorbonne Université (<a href="https://m2a.lip6.fr/">M2A</a>).
+      </p>
+      <p>
+        My interests encompass: generative modeling, representation learning, efficient generation
+        (eg. fast, low-latency, streamable) with a particular focus on speech and TTS.
+      </p>
+    </div>
   </div>
-  <nav role="navigation" aria-label="main navigation" >
-    <ul>
-        <li class="nav__item active">
-          <a href="/">about</a>
-        </li>
-        <li class="nav__item">
-          <a href="/blog/">work</a>
-        </li></ul>
-  </nav>
-</header>
+</section>
 
-    <main role="main">
-      <p><img src="./assets/bblogo.jpg" alt="image info" title="my image"></p>
-<h1>Théodor Lemerle</h1>
-<h2>PhD Student @ IRCAM, team <em>Analyse/Synthèse</em>.</h2>
-<p>My goal is to build expressive text-to-speech model that could convincingly tell a story to a kid.</p>
-<p>Before that I studied acoustic, signal processing and computer science for
-music (<a href="https://www.atiam.ircam.fr/en/">ATIAM</a>) at IRCAM. I also studied mathematics and computer science
-at Sorbonne Université (<a href="https://m2a.lip6.fr/">M2A</a>).</p>
-<p>My supervisors are <a href="https://www.ircam.fr/person/axel-roebel">Axel Roebel</a> and <a href="https://www.ircam.fr/person/nicolas-obin">Nicolas Obin</a>.
-<br>
-<br></p>
-<h2>I'm interested in</h2>
-<p>Text-to-speech, deep learning, audio signal processing, generative modeling ...</p>
-<br>
-<br>
-<h2>Contact</h2>
-<p>Mail : lastname at ircam dot fr</p>
-<p>GitHub : @theodorblackbird</p>
-<br>
+<section id="publications">
+  <h2 class="section-title">Publications</h2>
+  
+  <div class="pubyear">
+    <h3 class="pubyear__label">2026</h3>
+    <ol class="pubs">
+      
+      <li class="pub">
+        <p class="pub__title">Unbounded Streaming Text-To-Speech with Prefixed Sliding Window Attention</p>
+        <p class="pub__authors"><strong>Théodor Lemerle</strong>, Diego Torres Guarin, Téo Guichoux, Nicolas Obin, Axel Roebel</p>
+        <p class="pub__venue">The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026), Sydney, Australia</p>
+        <p class="pub__meta">
+          <span class="venue"><span class="venue__name">NeurIPS</span><span class="venue__kind venue__kind--poster (paris)">Poster (Paris)</span></span>
+          <a class="pill" href="https://openreview.net/forum?id=sVwnrFCMYb"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /> <path d="M14 2v5a1 1 0 0 0 1 1h5" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /></svg>OpenReview</a><a class="pill" href="https://psw-speech.github.io/"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3" /></svg>Demo</a>
+        </p>
+      </li>
+      
+      <li class="pub">
+        <p class="pub__title">Low-Framerate Speech Tokenization via Two-Stage Latent Patch Modeling</p>
+        <p class="pub__authors"><strong>Théodor Lemerle</strong>, Diego Torres, Téo Guichoux, Nicolas Obin, Axel Roebel</p>
+        <p class="pub__venue">Interspeech 2026, 27th Annual Conference of the International Speech Communication Association, Sydney, Australia</p>
+        <p class="pub__meta">
+          <span class="venue"><span class="venue__name">Interspeech</span><span class="venue__kind venue__kind--oral">Oral</span></span>
+          <a class="pill" href="https://www.isca-archive.org/interspeech_2026/"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /> <path d="M14 2v5a1 1 0 0 0 1 1h5" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /></svg>ISCA</a><a class="pill" href="https://z-codec.netlify.app/"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3" /></svg>Demo</a>
+        </p>
+      </li>
+      
+      <li class="pub">
+        <p class="pub__title">Gelina: Unified Speech and Gesture Synthesis via Interleaved Token Prediction</p>
+        <p class="pub__authors">Téo Guichoux, <strong>Théodor Lemerle</strong>, Shivam Mehta, Jonas Beskow, Gustav Eje Henter, Laure Soulier, Catherine Pelachaud, Nicolas Obin</p>
+        <p class="pub__venue">2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2026), Barcelona, Spain</p>
+        <p class="pub__meta">
+          <span class="venue"><span class="venue__name">ICASSP</span><span class="venue__kind venue__kind--poster">Poster</span></span>
+          <a class="pill" href="https://arxiv.org/abs/2510.12834"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.8423 0a1.0037 1.0037 0 0 0-.922.6078c-.1536.3687-.0438.6275.2938 1.1113l6.9185 8.3597-1.0223 1.1058a1.0393 1.0393 0 0 0 .003 1.4229l1.2292 1.3135-5.4391 6.4444c-.2803.299-.4538.823-.2971 1.1986a1.0253 1.0253 0 0 0 .9585.635.9133.9133 0 0 0 .6891-.3405l5.783-6.126 7.4902 8.0051a.8527.8527 0 0 0 .6835.2597.9575.9575 0 0 0 .8777-.6138c.1577-.377-.017-.7502-.306-1.1407l-7.0518-8.3418 1.0632-1.13a.9626.9626 0 0 0 .0089-1.3165L4.6336.4639s-.3733-.4535-.768-.463zm0 .272h.0166c.2179.0052.4874.2715.5644.3639l.005.006.0052.0055 10.169 10.9905a.6915.6915 0 0 1-.0072.945l-1.0666 1.133-1.4982-1.7724-8.5994-10.39c-.3286-.472-.352-.6183-.2592-.841a.7307.7307 0 0 1 .6704-.4401Zm14.341 1.5701a.877.877 0 0 0-.6554.2418l-5.6962 6.1584 1.6944 1.8319 5.3089-6.5138c.3251-.4335.479-.6603.3247-1.0292a1.1205 1.1205 0 0 0-.9763-.689zm-7.6557 12.2823 1.3186 1.4135-5.7864 6.1295a.6494.6494 0 0 1-.4959.26.7516.7516 0 0 1-.706-.4669c-.1119-.2682.0359-.6864.2442-.9083l.0051-.0055.0047-.0055z"/></svg>arXiv</a>
+        </p>
+      </li>
+      
+      <li class="pub">
+        <p class="pub__title">Lina-Speech: Gated Linear Attention and Initial-State Tuning for Multi-Sample Prompting Text-To-Speech Synthesis</p>
+        <p class="pub__authors"><strong>Théodor Lemerle</strong>, Téo Guichoux, Axel Roebel, Nicolas Obin</p>
+        <p class="pub__venue">Proceedings of the AAAI 2026 Workshop on Audio-Centric AI: Towards Real-World Multimodal Reasoning and Application Use Cases (Audio-AAAI), PMLR 312, Singapore</p>
+        <p class="pub__meta">
+          <span class="venue"><span class="venue__name">AAAI Workshop</span><span class="venue__kind venue__kind--poster">Poster</span></span>
+          <a class="pill" href="https://proceedings.mlr.press/v312/lemerle26a.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /> <path d="M14 2v5a1 1 0 0 0 1 1h5" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /></svg>PMLR</a><a class="pill" href="https://arxiv.org/abs/2410.23320"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.8423 0a1.0037 1.0037 0 0 0-.922.6078c-.1536.3687-.0438.6275.2938 1.1113l6.9185 8.3597-1.0223 1.1058a1.0393 1.0393 0 0 0 .003 1.4229l1.2292 1.3135-5.4391 6.4444c-.2803.299-.4538.823-.2971 1.1986a1.0253 1.0253 0 0 0 .9585.635.9133.9133 0 0 0 .6891-.3405l5.783-6.126 7.4902 8.0051a.8527.8527 0 0 0 .6835.2597.9575.9575 0 0 0 .8777-.6138c.1577-.377-.017-.7502-.306-1.1407l-7.0518-8.3418 1.0632-1.13a.9626.9626 0 0 0 .0089-1.3165L4.6336.4639s-.3733-.4535-.768-.463zm0 .272h.0166c.2179.0052.4874.2715.5644.3639l.005.006.0052.0055 10.169 10.9905a.6915.6915 0 0 1-.0072.945l-1.0666 1.133-1.4982-1.7724-8.5994-10.39c-.3286-.472-.352-.6183-.2592-.841a.7307.7307 0 0 1 .6704-.4401Zm14.341 1.5701a.877.877 0 0 0-.6554.2418l-5.6962 6.1584 1.6944 1.8319 5.3089-6.5138c.3251-.4335.479-.6603.3247-1.0292a1.1205 1.1205 0 0 0-.9763-.689zm-7.6557 12.2823 1.3186 1.4135-5.7864 6.1295a.6494.6494 0 0 1-.4959.26.7516.7516 0 0 1-.706-.4669c-.1119-.2682.0359-.6864.2442-.9083l.0051-.0055.0047-.0055z"/></svg>arXiv</a><a class="pill" href="https://github.com/theodorblackbird/lina-speech"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>Code</a><a class="pill" href="/blog/demo_lina/"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3" /></svg>Demo</a>
+        </p>
+      </li>
+      
+    </ol>
+  </div>
+  
+  <div class="pubyear">
+    <h3 class="pubyear__label">2025</h3>
+    <ol class="pubs">
+      
+      <li class="pub">
+        <p class="pub__title">Lina-Style: Word-Level Style Control in TTS via Interleaved Synthetic Data</p>
+        <p class="pub__authors"><strong>Théodor Lemerle</strong>, Nicolas Obin, Axel Roebel</p>
+        <p class="pub__venue">13th ISCA Speech Synthesis Workshop (SSW 13), Leeuwarden, The Netherlands, 2025</p>
+        <p class="pub__meta">
+          <span class="venue"><span class="venue__name">SSW</span><span class="venue__kind venue__kind--oral">Oral</span></span>
+          <a class="pill" href="https://github.com/theodorblackbird/lina-style"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>Code</a>
+        </p>
+      </li>
+      
+    </ol>
+  </div>
+  
+  <div class="pubyear">
+    <h3 class="pubyear__label">2024</h3>
+    <ol class="pubs">
+      
+      <li class="pub">
+        <p class="pub__title">Small-E: Small Language Model with Linear Attention for Efficient Speech Synthesis</p>
+        <p class="pub__authors"><strong>Théodor Lemerle</strong>, Nicolas Obin, Axel Roebel</p>
+        <p class="pub__venue">Interspeech 2024, 25th Annual Conference of the International Speech Communication Association, Kos, Greece</p>
+        <p class="pub__meta">
+          <span class="venue"><span class="venue__name">Interspeech</span><span class="venue__kind venue__kind--poster">Poster</span></span>
+          <a class="pill" href="https://arxiv.org/abs/2406.04467"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.8423 0a1.0037 1.0037 0 0 0-.922.6078c-.1536.3687-.0438.6275.2938 1.1113l6.9185 8.3597-1.0223 1.1058a1.0393 1.0393 0 0 0 .003 1.4229l1.2292 1.3135-5.4391 6.4444c-.2803.299-.4538.823-.2971 1.1986a1.0253 1.0253 0 0 0 .9585.635.9133.9133 0 0 0 .6891-.3405l5.783-6.126 7.4902 8.0051a.8527.8527 0 0 0 .6835.2597.9575.9575 0 0 0 .8777-.6138c.1577-.377-.017-.7502-.306-1.1407l-7.0518-8.3418 1.0632-1.13a.9626.9626 0 0 0 .0089-1.3165L4.6336.4639s-.3733-.4535-.768-.463zm0 .272h.0166c.2179.0052.4874.2715.5644.3639l.005.006.0052.0055 10.169 10.9905a.6915.6915 0 0 1-.0072.945l-1.0666 1.133-1.4982-1.7724-8.5994-10.39c-.3286-.472-.352-.6183-.2592-.841a.7307.7307 0 0 1 .6704-.4401Zm14.341 1.5701a.877.877 0 0 0-.6554.2418l-5.6962 6.1584 1.6944 1.8319 5.3089-6.5138c.3251-.4335.479-.6603.3247-1.0292a1.1205 1.1205 0 0 0-.9763-.689zm-7.6557 12.2823 1.3186 1.4135-5.7864 6.1295a.6494.6494 0 0 1-.4959.26.7516.7516 0 0 1-.706-.4669c-.1119-.2682.0359-.6864.2442-.9083l.0051-.0055.0047-.0055z"/></svg>arXiv</a><a class="pill" href="https://github.com/theodorblackbird/lina-speech"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>Code</a>
+        </p>
+      </li>
+      
+    </ol>
+  </div>
+  
+</section>
 
-    </main>
-    <footer role="contentinfo">
-</footer>
+<section id="demos">
+  <h2 class="section-title">Audio demos</h2>
+  <div class="cards">
+    
+    <a class="card" href="https://psw-speech.github.io/">
+      <span class="card__title">PSW-Speech ↗</span>
+      <span class="card__desc">Unbounded, streamable TTS with prefixed sliding-window attention.</span>
+    </a>
+    
+    <a class="card" href="https://z-codec.netlify.app/">
+      <span class="card__title">z-codec ↗</span>
+      <span class="card__desc">Low-framerate speech tokenization with two-stage latent patch modeling.</span>
+    </a>
+    
+    <a class="card" href="/blog/demo_lina/">
+      <span class="card__title">Lina-Speech</span>
+      <span class="card__desc">Initial-state tuning, expressive styles and zero-shot voice cloning.</span>
+    </a>
+    
+  </div>
+</section>
 
-  </body>
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <p class="contact">
+    <a class="contact__mail" data-email data-u="theodorlemerle" data-d="gmail.com" href="#contact"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /> <rect x="2" y="4" width="20" height="16" rx="2" /></svg><span>theodorlemerle at gmail dot com</span></a>
+    <a class="pill" href="https://github.com/theodorblackbird"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub</a><a class="pill" href="https://scholar.google.com/scholar?q=%22Th%C3%A9odor+Lemerle%22"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>Google Scholar</a><a class="pill" href="https://arxiv.org/search/?searchtype=author&amp;query=Lemerle%2C+Th%C3%A9odor"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.8423 0a1.0037 1.0037 0 0 0-.922.6078c-.1536.3687-.0438.6275.2938 1.1113l6.9185 8.3597-1.0223 1.1058a1.0393 1.0393 0 0 0 .003 1.4229l1.2292 1.3135-5.4391 6.4444c-.2803.299-.4538.823-.2971 1.1986a1.0253 1.0253 0 0 0 .9585.635.9133.9133 0 0 0 .6891-.3405l5.783-6.126 7.4902 8.0051a.8527.8527 0 0 0 .6835.2597.9575.9575 0 0 0 .8777-.6138c.1577-.377-.017-.7502-.306-1.1407l-7.0518-8.3418 1.0632-1.13a.9626.9626 0 0 0 .0089-1.3165L4.6336.4639s-.3733-.4535-.768-.463zm0 .272h.0166c.2179.0052.4874.2715.5644.3639l.005.006.0052.0055 10.169 10.9905a.6915.6915 0 0 1-.0072.945l-1.0666 1.133-1.4982-1.7724-8.5994-10.39c-.3286-.472-.352-.6183-.2592-.841a.7307.7307 0 0 1 .6704-.4401Zm14.341 1.5701a.877.877 0 0 0-.6554.2418l-5.6962 6.1584 1.6944 1.8319 5.3089-6.5138c.3251-.4335.479-.6603.3247-1.0292a1.1205 1.1205 0 0 0-.9763-.689zm-7.6557 12.2823 1.3186 1.4135-5.7864 6.1295a.6494.6494 0 0 1-.4959.26.7516.7516 0 0 1-.706-.4669c-.1119-.2682.0359-.6864.2442-.9083l.0051-.0055.0047-.0055z"/></svg>arXiv</a>
+  </p>
+</section>
+
+  </main>
+
+  <footer class="wrap footer">
+    <span>© 2026 Théodor Lemerle</span>
+  </footer>
+
+  <script>
+    // Build the e-mail address at runtime so it is not scraped from the HTML.
+    document.querySelectorAll('[data-email]').forEach(function (el) {
+      var addr = el.dataset.u + '@' + el.dataset.d;
+      el.href = 'mailto:' + addr;
+      var label = el.querySelector('span');
+      if (label) label.textContent = addr;
+    });
+  </script>
+</body>
 </html>
