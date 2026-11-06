@@ -11,9 +11,6 @@ const {
   readableDate 
 } = require('./config/filters')
 
-const { 
-  imageShortcode 
-} = require('./config/shortcodes')
 
 
 module.exports = function(eleventyConfig) {
@@ -34,14 +31,9 @@ module.exports = function(eleventyConfig) {
   /* files that need to be copied to the build folder  */
   /*===================================================*/
   eleventyConfig.addPassthroughCopy('./src/assets/bblogo.jpg')
-  eleventyConfig.addPassthroughCopy('./src/assets/icons')
   eleventyConfig.addPassthroughCopy('./src/assets/demo_lina')
-  eleventyConfig.addPassthroughCopy('./src/assets/sprite.svg')
   eleventyConfig.addPassthroughCopy('./src/assets/site.css')
   eleventyConfig.addPassthroughCopy('./src/assets/me.jpg')
-  eleventyConfig.addPassthroughCopy({
-      'node_modules/svg-icon-sprite/dist/svg-icon-sprite.js': 'assets/svg-icon-sprite.js'
-  })
 
 
   /*=================*/
@@ -78,10 +70,6 @@ module.exports = function(eleventyConfig) {
   })
 
 
-  /*=================*/
-  /*    shortcodes   */
-  /*=================*/
-  eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode)
 
 
 
