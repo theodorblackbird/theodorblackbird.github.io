@@ -1,0 +1,44 @@
+{
+  "name": "Théodor Lemerle",
+  "url": "https://theodorblackbird.github.io",
+  "emailUser": "theodorlemerle",
+  "emailDomain": "gmail.com",
+  "links": [
+    {
+      "label": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/theodorblackbird"
+    },
+    {
+      "label": "Google Scholar",
+      "icon": "scholar",
+      "url": "https://scholar.google.com/scholar?q=%22Th%C3%A9odor+Lemerle%22"
+    },
+    {
+      "label": "arXiv",
+      "icon": "arxiv",
+      "url": "https://arxiv.org/search/?searchtype=author&query=Lemerle%2C+Th%C3%A9odor"
+    }
+  ],
+  "demos": [
+    {
+      "title": "PSW-Speech",
+      "description": "Unbounded, streamable TTS with prefixed sliding-window attention.",
+      "url": "https://psw-speech.github.io/",
+      "external": true
+    },
+    {
+      "title": "z-codec",
+      "description": "Low-framerate speech tokenization with two-stage latent patch modeling.",
+      "url": "https://z-codec.netlify.app/",
+      "external": true
+    },
+    {
+      "title": "Lina-Speech",
+      "description": "Initial-state tuning, expressive styles and zero-shot voice cloning.",
+      "url": "/blog/demo_lina/"
+    }
+  ],
+  "description": "Théodor Lemerle, PhD in machine learning (IRCAM). Expressive and long-form speech synthesis.",
+  "defense": "https://www.youtube.com/live/Z8ZzRfT6MC0"
+}

@@ -1,0 +1,12 @@
+---
+layout: modern
+title: Page not found
+permalink: /404.html
+eleventyExcludeFromCollections: true
+---
+<h1 class="page-title">Page not found</h1>
+<p class="muted">This page has moved or no longer exists. If you followed a link from a paper, the demo is probably one of these:</p>
+<ul class="archive">
+  {% for d in site.demos %}<li><a href="{{ d.url }}">{{ d.title }}{% if d.external %} ↗{% endif %}</a></li>{% endfor %}
+</ul>
+<p><a href="/">← Back to the homepage</a></p>

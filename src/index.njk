@@ -1,0 +1,75 @@
+---
+layout: modern
+permalink: /
+---
+<section class="intro" id="about">
+  <img class="intro__photo" src="/assets/me.jpg" alt="Photo of Théodor Lemerle" width="600" height="799">
+  <div class="intro__body">
+    <h1>{{ site.name }}</h1>
+    <div class="prose">
+      <p>
+        I did my PhD at <a href="https://www.ircam.fr/">IRCAM</a> (STMS lab, CNRS / Sorbonne Université)
+        in the Analysis/Synthesis team, supervised by
+        <a href="https://www.ircam.fr/person/axel-roebel">Axel Roebel</a> and
+        <a href="https://www.ircam.fr/person/nicolas-obin">Nicolas Obin</a>.
+        My thesis, <em>Toward Expressive and Long-Form Speech Synthesis</em>
+        (<a href="{{ site.defense }}">defense video</a>), set out to build
+        text-to-speech (TTS) models that can convincingly tell a story to a child.
+        We proposed methods for control of high-level attributes (eg. emotions, prosody) under scarce
+        annotated data regime. We also introduced architectures for stable synthesis with no measurable
+        degradation over hours of speech, while being fully streamable in text and audio.
+      </p>
+      <p>
+        Before that, I studied acoustics, signal processing and computer science for music
+        (<a href="https://www.atiam.ircam.fr/en/">ATIAM</a>) at IRCAM, and mathematics and
+        computer science for machine learning at Sorbonne Université (<a href="https://m2a.lip6.fr/">M2A</a>).
+      </p>
+      <p>
+        My interests encompass: generative modeling, representation learning, efficient generation
+        (eg. fast, low-latency, streamable) with a particular focus on speech and TTS.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <h2 class="section-title">Publications</h2>
+  {% for group in publications | byYear %}
+  <div class="pubyear">
+    <h3 class="pubyear__label">{{ group.year }}</h3>
+    <ol class="pubs">
+      {% for p in group.items %}
+      <li class="pub">
+        <p class="pub__title">{{ p.title }}</p>
+        <p class="pub__authors">{{ p.authors | replace("Théodor Lemerle", "<strong>Théodor Lemerle</strong>") | safe }}</p>
+        <p class="pub__venue">{{ p.venueFull }}</p>
+        <p class="pub__meta">
+          <span class="venue"><span class="venue__name">{{ p.venueShort }}</span><span class="venue__kind venue__kind--{{ p.presentation | lower }}">{{ p.presentation }}</span></span>
+          {% for l in p.links %}<a class="pill" href="{{ l.url }}">{{ icons[l.icon or "link"] | safe }}{{ l.label }}</a>{% endfor %}
+        </p>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+  {% endfor %}
+</section>
+
+<section id="demos">
+  <h2 class="section-title">Audio demos</h2>
+  <div class="cards">
+    {% for d in site.demos %}
+    <a class="card" href="{{ d.url }}">
+      <span class="card__title">{{ d.title }}{% if d.external %} ↗{% endif %}</span>
+      <span class="card__desc">{{ d.description }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <p class="contact">
+    <a class="contact__mail" data-email data-u="{{ site.emailUser }}" data-d="{{ site.emailDomain }}" href="#contact">{{ icons.mail | safe }}<span>{{ site.emailUser }} at {{ site.emailDomain | replace(".", " dot ") }}</span></a>
+    {% for l in site.links %}<a class="pill" href="{{ l.url }}">{{ icons[l.icon] | safe }}{{ l.label }}</a>{% endfor %}
+  </p>
+</section>

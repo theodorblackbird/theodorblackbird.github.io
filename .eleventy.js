@@ -33,13 +33,12 @@ module.exports = function(eleventyConfig) {
   /*===================================================*/
   /* files that need to be copied to the build folder  */
   /*===================================================*/
-  eleventyConfig.addPassthroughCopy('./src/assets/social-image.jpg')
   eleventyConfig.addPassthroughCopy('./src/assets/bblogo.jpg')
   eleventyConfig.addPassthroughCopy('./src/assets/icons')
-  eleventyConfig.addPassthroughCopy('./src/assets/theming')
-  eleventyConfig.addPassthroughCopy('./src/assets/demo_alpha')
   eleventyConfig.addPassthroughCopy('./src/assets/demo_lina')
   eleventyConfig.addPassthroughCopy('./src/assets/sprite.svg')
+  eleventyConfig.addPassthroughCopy('./src/assets/site.css')
+  eleventyConfig.addPassthroughCopy('./src/assets/me.jpg')
   eleventyConfig.addPassthroughCopy({
       'node_modules/svg-icon-sprite/dist/svg-icon-sprite.js': 'assets/svg-icon-sprite.js'
   })
@@ -50,6 +49,7 @@ module.exports = function(eleventyConfig) {
   /*=================*/
   eleventyConfig.addLayoutAlias('page', 'layouts/page')
   eleventyConfig.addLayoutAlias('article', 'layouts/article')
+  eleventyConfig.addLayoutAlias('modern', 'layouts/modern')
 
 
   /*=================*/
@@ -64,6 +64,18 @@ module.exports = function(eleventyConfig) {
   /*     Filters     */
   /*=================*/
   eleventyConfig.addFilter('readableDate', readableDate)
+  eleventyConfig.addFilter('year', () => new Date().getFullYear())
+  // Group publications by year, newest first, keeping file order within a year.
+  eleventyConfig.addFilter('byYear', (pubs) => {
+    const groups = new Map()
+    pubs.forEach((p) => {
+      if (!groups.has(p.year)) groups.set(p.year, [])
+      groups.get(p.year).push(p)
+    })
+    return [...groups.entries()]
+      .sort((a, b) => b[0] - a[0])
+      .map(([year, items]) => ({ year, items }))
+  })
 
 
   /*=================*/

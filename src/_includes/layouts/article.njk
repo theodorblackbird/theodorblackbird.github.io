@@ -1,12 +1,9 @@
 ---
-layout: page
+layout: modern
+wide: true
 ---
-
-<article class="article">
-  <h1>{{ title }}</h1>
-  <small>
-    Published: <time>{{ date | readableDate }}</time>
-    <a class="category" href="/blog/{{ category }}">{{ category }}</a>
-  </small>
+<article class="demo">
+  <p class="demo__back"><a href="/">← Home</a></p>
+  <h1 class="page-title">{{ title }}</h1>
   {{ content | safe }}
 </article>

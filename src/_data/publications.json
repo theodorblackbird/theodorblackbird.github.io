@@ -1,0 +1,134 @@
+[
+  {
+    "title": "Unbounded Streaming Text-To-Speech with Prefixed Sliding Window Attention",
+    "authors": "Théodor Lemerle, Diego Torres Guarin, Téo Guichoux, Nicolas Obin, Axel Roebel",
+    "venue": "NeurIPS",
+    "year": 2026,
+    "type": "conference",
+    "links": [
+      {
+        "label": "OpenReview",
+        "icon": "paper",
+        "url": "https://openreview.net/forum?id=sVwnrFCMYb"
+      },
+      {
+        "label": "Demo",
+        "icon": "demo",
+        "url": "https://psw-speech.github.io/"
+      }
+    ],
+    "venueShort": "NeurIPS",
+    "venueFull": "The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026), Sydney, Australia",
+    "presentation": "Poster (Paris)"
+  },
+  {
+    "title": "Low-Framerate Speech Tokenization via Two-Stage Latent Patch Modeling",
+    "authors": "Théodor Lemerle, Diego Torres, Téo Guichoux, Nicolas Obin, Axel Roebel",
+    "venue": "Interspeech",
+    "year": 2026,
+    "type": "conference",
+    "links": [
+      {
+        "label": "ISCA",
+        "icon": "paper",
+        "url": "https://www.isca-archive.org/interspeech_2026/"
+      },
+      {
+        "label": "Demo",
+        "icon": "demo",
+        "url": "https://z-codec.netlify.app/"
+      }
+    ],
+    "venueShort": "Interspeech",
+    "venueFull": "Interspeech 2026, 27th Annual Conference of the International Speech Communication Association, Sydney, Australia",
+    "presentation": "Oral"
+  },
+  {
+    "title": "Gelina: Unified Speech and Gesture Synthesis via Interleaved Token Prediction",
+    "authors": "Téo Guichoux, Théodor Lemerle, Shivam Mehta, Jonas Beskow, Gustav Eje Henter, Laure Soulier, Catherine Pelachaud, Nicolas Obin",
+    "venue": "ICASSP",
+    "year": 2026,
+    "type": "conference",
+    "links": [
+      {
+        "label": "arXiv",
+        "icon": "arxiv",
+        "url": "https://arxiv.org/abs/2510.12834"
+      }
+    ],
+    "venueShort": "ICASSP",
+    "venueFull": "2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2026), Barcelona, Spain",
+    "presentation": "Poster"
+  },
+  {
+    "title": "Lina-Speech: Gated Linear Attention and Initial-State Tuning for Multi-Sample Prompting Text-To-Speech Synthesis",
+    "authors": "Théodor Lemerle, Téo Guichoux, Axel Roebel, Nicolas Obin",
+    "venue": "AAAI Workshop on Audio-Centric AI (PMLR 312)",
+    "year": 2026,
+    "type": "workshop",
+    "links": [
+      {
+        "label": "PMLR",
+        "icon": "paper",
+        "url": "https://proceedings.mlr.press/v312/lemerle26a.html"
+      },
+      {
+        "label": "arXiv",
+        "icon": "arxiv",
+        "url": "https://arxiv.org/abs/2410.23320"
+      },
+      {
+        "label": "Code",
+        "icon": "github",
+        "url": "https://github.com/theodorblackbird/lina-speech"
+      },
+      {
+        "label": "Demo",
+        "icon": "demo",
+        "url": "/blog/demo_lina/"
+      }
+    ],
+    "venueShort": "AAAI Workshop",
+    "venueFull": "Proceedings of the AAAI 2026 Workshop on Audio-Centric AI: Towards Real-World Multimodal Reasoning and Application Use Cases (Audio-AAAI), PMLR 312, Singapore",
+    "presentation": "Poster"
+  },
+  {
+    "title": "Lina-Style: Word-Level Style Control in TTS via Interleaved Synthetic Data",
+    "authors": "Théodor Lemerle, Nicolas Obin, Axel Roebel",
+    "venue": "ISCA Speech Synthesis Workshop (SSW 13)",
+    "year": 2025,
+    "type": "workshop",
+    "links": [
+      {
+        "label": "Code",
+        "icon": "github",
+        "url": "https://github.com/theodorblackbird/lina-style"
+      }
+    ],
+    "venueShort": "SSW",
+    "venueFull": "13th ISCA Speech Synthesis Workshop (SSW 13), Leeuwarden, The Netherlands, 2025",
+    "presentation": "Oral"
+  },
+  {
+    "title": "Small-E: Small Language Model with Linear Attention for Efficient Speech Synthesis",
+    "authors": "Théodor Lemerle, Nicolas Obin, Axel Roebel",
+    "venue": "Interspeech",
+    "year": 2024,
+    "type": "conference",
+    "links": [
+      {
+        "label": "arXiv",
+        "icon": "arxiv",
+        "url": "https://arxiv.org/abs/2406.04467"
+      },
+      {
+        "label": "Code",
+        "icon": "github",
+        "url": "https://github.com/theodorblackbird/lina-speech"
+      }
+    ],
+    "venueShort": "Interspeech",
+    "venueFull": "Interspeech 2024, 25th Annual Conference of the International Speech Communication Association, Kos, Greece",
+    "presentation": "Poster"
+  }
+]

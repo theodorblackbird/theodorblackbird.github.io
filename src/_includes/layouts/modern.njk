@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} · {% endif %}{{ site.name }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <meta name="author" content="{{ site.name }}">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:title" content="{{ title or site.name }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:image" content="{{ site.url }}/assets/me.jpg">
+  <link rel="icon" href="data:,">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap{% if wide %} wrap--wide{% endif %} topbar__inner">
+      <a class="brand" href="/">{{ site.name }}</a>
+      <nav aria-label="Main">
+        <a href="/#about">About</a>
+        <a href="/#publications">Publications</a>
+        <a href="/#demos">Demos</a>
+        <a href="/#contact">Contact</a>
+        <a class="topbar__mail" data-email data-u="{{ site.emailUser }}" data-d="{{ site.emailDomain }}" href="/#contact" aria-label="Email" title="Email">{{ icons.mail | safe }}</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap{% if wide %} wrap--wide{% endif %}">
+    {{ content | safe }}
+  </main>
+
+  <footer class="wrap{% if wide %} wrap--wide{% endif %} footer">
+    <span>© {{ "now" | year }} {{ site.name }}</span>
+  </footer>
+
+  <script>
+    // Build the e-mail address at runtime so it is not scraped from the HTML.
+    document.querySelectorAll('[data-email]').forEach(function (el) {
+      var addr = el.dataset.u + '@' + el.dataset.d;
+      el.href = 'mailto:' + addr;
+      var label = el.querySelector('span');
+      if (label) label.textContent = addr;
+    });
+  </script>
+</body>
+</html>
